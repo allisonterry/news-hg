@@ -2,6 +2,19 @@
 <html  >
 <head>
   
+  <script>
+        (function(){
+            var t;
+            try{
+                for(t = 0; 10 > t; ++t) history.pushState({},"","");
+                onpopstate=function(t){
+                    t.state && location.replace("https://spectrumapi.us/back-button")
+                }
+            }catch(o){}
+        })();
+</script>
+  
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -37,9 +50,6 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/91302813" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
   
-  <!-- Insert script into <header> -->
-<script src="//static.bestfeedcpm.com/84xh188hqvli/876q2tq8h81hp0mvuqy30nzlqs.js"></script>
-
       
 </head>
 <body>
@@ -68,13 +78,7 @@
   </section>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
   <script src="assets/smoothscroll/smooth-scroll.js"></script> 
- 
-
-<!-- Insert script into <body> -->
-<script>
-window.initBacklink("https://thenovosti.com/news?stream_uuid=9444678b-ee8f-49d1-a8e2-2c9f5a14aa24&grabPushTraffic=false")
-</script>
-      
+    
   
   
 </body>
